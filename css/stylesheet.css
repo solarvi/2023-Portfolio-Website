@@ -1,16 +1,18 @@
 body {
-   background-color: white;
+   background-color: #ffb5db;
    margin: 0px;
 }
 
 #main-container {
 position: absolute;
+display:flex;
+flex-direction: column;
 left: 0;
 right: 0;
 margin-left: auto;
 margin-right: auto;
 width: 1024px;
-height: 2000px;
+height: 1100px;
 background-color: white;
 }
 
@@ -24,6 +26,22 @@ background-color: white;
     font-family: 'Patua One', cursive;
     font-size:25px;
     color: white;
+    transition-property: background-color;
+    transition-duration:1s;
+}
+
+#nav:hover {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 1024px;
+    height: 75px;
+    background-color: orange;
+    font-family: 'Patua One', cursive;
+    font-size:25px;
+    color: white;
+    transition-property: background-color;
+    transition-duration:1s;
 }
 
 ul {
@@ -35,7 +53,43 @@ ul {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 80px;
+    margin-right: 80px;
 
+}
+
+#title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:200px;
+}
+
+#footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:1024px;
+    height:150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FF88B3;
+    color:white;
+    margin-top:235px;
+    font-size:25px;
+}
+
+#contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#logo {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+a {
+    color:white;
 }
